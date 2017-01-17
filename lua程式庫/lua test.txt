@@ -1,0 +1,300 @@
+-- Begin
+SCREEN_RESOLUTION="320x568";
+
+--set point(x, y)
+--touchMove(3, 167, 275);
+-- local rgbx = 167;
+-- local rgby = 275;
+-- usleep(100000); 
+--set rgb color
+--local rgb = getColor(167, 275);
+--log("rgb:" ..  rgb);
+--usleep(100000); 
+--if rgb~=8670464 then
+-- print(cap());
+-- log(cap());
+--else
+-- print(capot());
+-- log(capot());
+--end
+
+
+--//-------------------------------
+--//  functions
+--//-------------------------------
+function capot()   
+	usleep(200000);
+	touchDown(4, 239.5, 386.0);--give up
+	usleep(250000);
+	touchUp(4, 239, 386);
+	usleep(3000000);
+	touchDown(9, 0.2, 402);--點九域
+	usleep(250000);
+	touchUp(9, 0.2, 402);
+	usleep(3000000);
+end 
+
+
+function dowork5() 
+	usleep(5000000);--等5秒
+	touchDown(9, 0.2, 402);--點修練
+	usleep(200000);
+	touchUp(9, 0.2, 402);
+	usleep(200000);
+	print(dom1());
+	usleep(15000000);--做完等15秒
+	usleep(200000);
+	print(dom2());
+	usleep(15000000);--做完等15秒
+	usleep(200000);
+	print(dom3());
+	usleep(15000000);--做完等15秒
+	usleep(200000);
+	print(dom4());
+	usleep(15000000);--做完等15秒
+	usleep(200000);
+	print(dom5());
+	usleep(15000000);--做完等15秒
+end
+
+
+function dom1()
+	touchDown(9, 0.2, 402);--點九域
+	usleep(200000);
+	touchUp(9, 0.2, 402);
+	usleep(200000);
+	touchDown(4, 256, 477);--修練1
+	usleep(200000);
+	touchUp(4, 256, 477);
+	usleep(2000000);
+	touchDown(2, 143, 193); --+夥伴
+	usleep(200000);
+	touchUp(2, 143, 165);
+	usleep(2200000);
+	touchDown(7, 275, 486);--選擇
+	usleep(70000);
+	touchUp(7, 275, 484);
+	usleep(2200000);
+	touchDown(9, 265, 278);--確定1
+	usleep(70000);
+	touchUp(9, 265, 278);
+	usleep(4200000);
+	touchDown(4, 227, 278);--確定2
+	usleep(70000);
+	touchUp(4, 227, 278);
+	usleep(10000000);
+	local rgb = getColor(234.7, 285.9);
+	log("rgb-fight:" ..  rgb);
+	if rgb==9718016 then
+		capot();log("Fight!");
+	end
+	touchDown(3, 37, 89);--退出夥伴
+	usleep(200000);
+	touchUp(3, 37, 89);
+ end
+ 
+ 
+function dom2()
+	touchDown(9, 0.2, 402);--點九域
+	usleep(200000);
+	touchUp(9, 0.2, 402);
+	usleep(200000);
+	touchDown(5, 79, 386);--修練2
+	usleep(200000);
+	touchUp(5, 79, 386);
+	usleep(2000000);
+	touchDown(2, 143, 193); --+夥伴
+	usleep(200000);
+	touchUp(2, 143, 165);
+	usleep(2200000);
+	touchDown(7, 275, 486);--選擇
+	usleep(70000);
+	touchUp(7, 275, 484);
+	usleep(2200000);
+	touchDown(9, 265, 278);--確定1
+	usleep(70000);
+	touchUp(9, 265, 278);
+	usleep(4200000);
+	touchDown(4, 227, 278);--確定2
+	usleep(70000);
+	touchUp(4, 227, 278);
+	usleep(10000000);
+	local rgb = getColor(234.7, 285.9);
+	log("rgb-fight:" ..  rgb);
+	if rgb==9718016 then
+		capot();log("Fight!");
+	end
+	touchDown(3, 37, 89);--退出夥伴
+	usleep(200000);
+	touchUp(3, 37, 89);
+end
+
+
+function dom3()
+	touchDown(9, 0.2, 402);--點九域
+	usleep(200000);
+	touchUp(9, 0.2, 402);
+	usleep(200000);
+	touchDown(3, 111, 187);--修練3
+	usleep(200000);
+	touchUp(3, 111, 187);
+	usleep(2000000);
+	touchDown(2, 143, 193); --+夥伴
+	usleep(200000);
+	touchUp(2, 143, 165);
+	usleep(2200000);
+	touchDown(7, 275, 486);--選擇
+	usleep(70000);
+	touchUp(7, 275, 484);
+	usleep(2200000);
+	touchDown(9, 265, 278);--確定1
+	usleep(70000);
+	touchUp(9, 265, 278);
+	usleep(4200000);
+	touchDown(4, 227, 278);--確定2
+	usleep(70000);
+	touchUp(4, 227, 278);
+	usleep(10000000);
+	local rgb = getColor(234.7, 285.9);
+	log("rgb-fight:" ..  rgb);
+	if rgb==9718016 then
+		capot();log("Fight!");
+	end
+	touchDown(3, 37, 89);--退出夥伴
+	usleep(200000);
+	touchUp(3, 37, 89);
+end
+
+
+function dom4()
+	touchDown(9, 0.2, 402);--點九域
+	usleep(200000);
+	touchUp(9, 0.2, 402);
+	usleep(200000);
+	touchDown(8, 224, 201);--修練4
+	usleep(200000);
+	touchUp(8, 224, 201);
+	usleep(2000000);
+	touchDown(2, 143, 193); --+夥伴
+	usleep(200000);
+	touchUp(2, 143, 165);
+	usleep(2200000);
+	touchDown(7, 275, 486);--選擇
+	usleep(70000);
+	touchUp(7, 275, 484);
+	usleep(2200000);
+	touchDown(9, 265, 278);--確定1
+	usleep(70000);
+	touchUp(9, 265, 278);
+	usleep(4200000);
+	touchDown(4, 227, 278);--確定2
+	usleep(70000);
+	touchUp(4, 227, 278);
+	usleep(10000000);
+	local rgb = getColor(234.7, 285.9);
+	log("rgb-fight:" ..  rgb);
+	if rgb==9718016 then
+		capot();log("Fight!");
+	end
+	touchDown(3, 37, 89);--退出夥伴
+	usleep(200000);
+	touchUp(3, 37, 89);
+end
+
+
+function dom5()
+	touchDown(9, 0.2, 402);--點九域
+	usleep(200000);
+	touchUp(9, 0.2, 402);
+	usleep(200000);
+	touchDown(2, 80, 70);--修練5
+	usleep(200000);
+	touchUp(2, 80, 70);
+	usleep(2000000);
+	touchDown(2, 143, 193); --+夥伴
+	usleep(200000);
+	touchUp(2, 143, 165);
+	usleep(2200000);
+	touchDown(7, 275, 486);--選擇
+	usleep(70000);
+	touchUp(7, 275, 484);
+	usleep(2200000);
+	touchDown(9, 265, 278);--確定1
+	usleep(70000);
+	touchUp(9, 265, 278);
+	usleep(4200000);
+	touchDown(4, 227, 278);--確定2
+	usleep(70000);
+	touchUp(4, 227, 278);
+	usleep(10000000);
+	local rgb = getColor(234.7, 285.9);
+	log("rgb-fight:" ..  rgb);
+	if rgb==9718016 then
+		capot();log("Fight!");
+	end
+	touchDown(3, 37, 89);--退出夥伴
+	usleep(200000);
+	touchUp(3, 37, 89);
+	usleep(4000000);
+
+	--收尾
+	touchDown(3, 10.0, 9.0);--x
+	usleep(70000);
+	touchUp(3, 10.0, 9.0);
+	usleep(4000000);
+	touchDown(3, 10.0, 9.0);--x
+	usleep(70000);
+	touchUp(3, 10.0, 9.0);
+	usleep(2000000);
+ end
+--//-----------------------------
+--//  functions End    |
+--//-----------------------------
+
+
+
+--//-------------------------------
+--//  判斷式
+--//-------------------------------
+local rgbSS = getColor(206.0, 19.2);
+log("rgbSS:" ..  rgbSS);
+usleep(100000); 
+
+
+--//判斷式 的 function
+function loadtodo()
+
+--start2
+	local rgbXP = getColor(204, 347);
+	log("rgbXP:" ..  rgbXP);
+	usleep(200000); 
+
+	if rgbXP~=14079975 then
+		log("rgbXP Can't find it..");
+		touchDown(3, 10.0, 9.0);--x
+		usleep(70000);
+		touchUp(3, 10.0, 9.0);
+		--usleep(2000000);
+		usleep(60000000);--1 mim end
+	else
+		log("Find rgbXP point.."); 
+		touchMove(2, 204, 347);
+		touchDown(2, 204, 347);--確定
+		usleep(50000);
+		touchUp(2, 204, 347);
+		dowork5();
+	end
+end
+
+--start1
+if rgbSS~=4352437 then
+	log("rgbSS Can't find it..");
+else
+	log("Find rgbSS, Loading..."); 
+	touchMove(1, 206.0, 19.2);
+	touchDown(1, 206.0, 19.2);--確定
+	usleep(1000000);
+	touchUp(1, 206.0, 19.2);
+	usleep(5000000);
+	loadtodo();
+end
